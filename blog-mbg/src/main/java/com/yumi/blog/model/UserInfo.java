@@ -44,7 +44,7 @@ public class UserInfo {
     /**
      * 昵称
      */
-    private String nickName;
+    private String nickname;
     /**
      * 登录账号
      */

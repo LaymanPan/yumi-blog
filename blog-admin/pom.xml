@@ -15,7 +15,7 @@
     <properties>
         <spring.boot.starter.version>2.1.15.RELEASE</spring.boot.starter.version>
         <spring.boot.test.version>2.1.15.RELEASE</spring.boot.test.version>
-        <spring.tx.version>5.2.5.RELEASE</spring.tx.version>
+        <spring.tx.version>5.1.16.RELEASE</spring.tx.version>
         <mybatis.spring.version>2.0.4</mybatis.spring.version>
     </properties>
 
