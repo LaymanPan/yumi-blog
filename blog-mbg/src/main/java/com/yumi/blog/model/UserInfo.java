@@ -13,9 +13,7 @@ import java.util.Date;
  */
 @Getter
 @Setter
-public class UserInfo {
-
-    private Long id;
+public class UserInfo extends BaseModel{
 
     /**
      * 头像地址
@@ -25,14 +23,6 @@ public class UserInfo {
      * 出生日期
      */
     private Date birth;
-    /**
-     * 创建时间
-     */
-    private Date createTime;
-    /**
-     * 更新时间
-     */
-    private Date updateTime;
     /**
      * email地址
      */

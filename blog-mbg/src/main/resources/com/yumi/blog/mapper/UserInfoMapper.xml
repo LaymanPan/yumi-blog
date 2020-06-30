@@ -2,7 +2,11 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.yumi.blog.mapper.UserInfoMapper">
     <resultMap id="UserInfoResultMap" type="com.yumi.blog.model.UserInfo">
+        <!-- BaseModel -->
         <result column="id" jdbcType="INTEGER" property="id" />
+        <result column="create_time" javaType="DATE" property="createTime" />
+        <result column="update_time" javaType="DATE" property="updateTime" />
+        <!-- UserInfo -->
         <result column="sex" jdbcType="INTEGER" property="sex" />
         <result column="status" jdbcType="INTEGER" property="status" />
         <result column="avatar_url" jdbcType="VARCHAR" property="avatarUrl" />
@@ -12,8 +16,6 @@
         <result column="username" jdbcType="VARCHAR" property="username" />
         <result column="password" jdbcType="VARCHAR" property="password" />
         <result column="birth" jdbcType="DATE" property="birth" />
-        <result column="create_time" javaType="DATE" property="createTime" />
-        <result column="update_time" javaType="DATE" property="updateTime" />
     </resultMap>
 
     <select id="findAll" resultMap="UserInfoResultMap">
